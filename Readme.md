@@ -3,7 +3,7 @@
 
 - check is user a root user.
 - apt-get update
-- apt-get install maven
+- apt-get install maven -y
 - mvn test
 - mvn packages
 - apt-get install tomcat9
