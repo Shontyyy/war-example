@@ -1,5 +1,4 @@
-FROM tomcat
+FROM fjudith/draw.io
 ADD */hello-world-0.0.1-SNAPSHOT.war $CATALINA_HOME/webapps/newapp.war
 EXPOSE 8080
-CMD cd $CATALINA_HOME/bin/
-CMD ./startup.sh 
+CMD ["/usr/local/tomcat/bin/catalina.sh","run"] 
